@@ -1,16 +1,16 @@
-# 🚀 Jupyter Lab Utils
+# 🚀 Jupyter Lab Progress
 
-[![PyPI version](https://badge.fury.io/py/jupyter-lab-utils.svg)](https://badge.fury.io/py/jupyter-lab-utils)
-[![Python Version](https://img.shields.io/pypi/pyversions/jupyter-lab-utils.svg)](https://pypi.org/project/jupyter-lab-utils/)
+[![PyPI version](https://badge.fury.io/py/jupyter-lab-progress.svg)](https://badge.fury.io/py/jupyter-lab-progress)
+[![Python Version](https://img.shields.io/pypi/pyversions/jupyter-lab-progress.svg)](https://pypi.org/project/jupyter-lab-progress/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Transform your Jupyter notebooks into interactive, professional learning experiences with beautiful progress tracking, instant validation, and stunning visual feedback.
 
-## ✨ Why Jupyter Lab Utils?
+## ✨ Why Jupyter Lab Progress?
 
 Teaching complex technical concepts in Jupyter notebooks can be challenging. Students need clear visual feedback, instructors need reliable progress tracking, and everyone benefits from a more engaging learning experience. 
 
-**Jupyter Lab Utils** bridges this gap by providing:
+**Jupyter Lab Progress** bridges this gap by providing:
 
 - 📊 **Visual Progress Tracking** - Beautiful progress bars that show lab completion at a glance
 - ✅ **Instant Validation** - Real-time feedback when students complete tasks correctly  
@@ -39,7 +39,7 @@ show_warning("Remember to check your index status before querying!")
 ## 📦 Installation
 
 ```bash
-pip install jupyter-lab-utils
+pip install jupyter-lab-progress
 ```
 
 ## 🛠️ Core Features

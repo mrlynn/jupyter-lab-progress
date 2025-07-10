@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "jupyter-lab-utils"
-version = "1.0.0"
+name = "jupyter-lab-progress"
+version = "1.0.1"
 authors = [
     {name = "Michael Lynn", email = "michael.lynn@mongodb.com"},
 ]
