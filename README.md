@@ -1,7 +1,7 @@
 # 🚀 Jupyter Lab Utils
 
-[![PyPI version](https://badge.fury.io/py/jupyter-lab-utils-mrlynn.svg)](https://badge.fury.io/py/jupyter-lab-utils-mrlynn)
-[![Python Version](https://img.shields.io/pypi/pyversions/jupyter-lab-utils-mrlynn.svg)](https://pypi.org/project/jupyter-lab-utils-mrlynn/)
+[![PyPI version](https://badge.fury.io/py/jupyter-lab-utils.svg)](https://badge.fury.io/py/jupyter-lab-utils)
+[![Python Version](https://img.shields.io/pypi/pyversions/jupyter-lab-utils.svg)](https://pypi.org/project/jupyter-lab-utils/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Transform your Jupyter notebooks into interactive, professional learning experiences with beautiful progress tracking, instant validation, and stunning visual feedback.
@@ -39,7 +39,7 @@ show_warning("Remember to check your index status before querying!")
 ## 📦 Installation
 
 ```bash
-pip install jupyter-lab-utils-mrlynn
+pip install jupyter-lab-utils
 ```
 
 ## 🛠️ Core Features

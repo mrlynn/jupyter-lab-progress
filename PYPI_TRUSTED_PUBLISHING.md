@@ -1,16 +1,16 @@
 # Configuring Trusted Publishing on PyPI
 
-Follow these steps to set up trusted publishing for `jupyter-lab-utils-mrlynn`:
+Follow these steps to set up trusted publishing for `jupyter-lab-utils`:
 
 ## 1. Log in to PyPI
 Go to https://pypi.org and log in to your account.
 
 ## 2. Navigate to Your Project
-Go to your project page: https://pypi.org/manage/project/jupyter-lab-utils-mrlynn/
+Go to your project page: https://pypi.org/manage/project/jupyter-lab-utils/
 
 ## 3. Access Publishing Settings
 1. Click on "Manage" or "Your projects" in the top menu
-2. Find `jupyter-lab-utils-mrlynn` and click on it
+2. Find `jupyter-lab-utils` and click on it
 3. Look for "Publishing" in the left sidebar (or similar section)
 
 ## 4. Add GitHub Publisher
