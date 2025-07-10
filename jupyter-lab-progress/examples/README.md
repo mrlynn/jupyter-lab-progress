@@ -64,6 +64,7 @@ Experience a real-world lab that covers:
 
 ## 🚀 Getting Started
 
+### Method 1: Quick Start (Recommended)
 1. **Install jupyter-lab-progress:**
    ```bash
    pip install jupyter-lab-progress
@@ -75,8 +76,63 @@ Experience a real-world lab that covers:
    ```
    Open any notebook to start exploring!
 
-3. **Try the examples:**
-   Each notebook is self-contained and includes sample data.
+### Method 2: Complete Environment Setup
+For a full environment with all optional dependencies:
+
+**Using pip:**
+```bash
+pip install -r requirements.txt
+```
+
+**Using conda:**
+```bash
+conda env create -f environment.yml
+conda activate jupyter-lab-progress-examples
+```
+
+### Method 3: Automatic Setup (In Notebooks)
+Each notebook includes an automatic setup cell that will install missing packages:
+```python
+# First cell in each notebook handles dependencies automatically
+import sys
+import subprocess
+
+try:
+    import jupyter_lab_progress
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "jupyter-lab-progress"])
+```
+
+## 📦 Dependencies
+
+### Core Dependencies (automatically installed)
+- `jupyter-lab-progress` - The main package
+- `pandas>=1.0.0` - Data manipulation
+- `numpy>=1.18.0` - Numerical computing
+- `ipython>=7.0.0` - Interactive Python
+
+### Optional Dependencies (for specific examples)
+- `matplotlib>=3.0.0` - Plotting and visualization
+- `seaborn>=0.11.0` - Statistical data visualization
+- `plotly>=5.0.0` - Interactive visualizations
+- `pymongo>=4.0.0` - MongoDB driver (for MongoDB examples)
+- `dnspython>=2.0.0` - DNS support for MongoDB
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+**"Module not found" errors:**
+- Run the first cell in any notebook - it will auto-install missing packages
+- Or manually install: `pip install jupyter-lab-progress matplotlib seaborn plotly pymongo`
+
+**Import errors in Jupyter:**
+- Restart your kernel: `Kernel` → `Restart Kernel`
+- Or run: `%pip install jupyter-lab-progress` in a notebook cell
+
+**Package version conflicts:**
+- Create a fresh environment: `conda create -n jupyter-examples python=3.9`
+- Install from requirements: `pip install -r requirements.txt`
 
 ## 📋 How to Use These Examples
 
@@ -188,5 +244,5 @@ These examples are provided under the MIT License - feel free to use them in you
 ---
 
 <p align="center">
-  Made with ❤️ for the teaching community
+  Made with ❤️ for the teaching community by Michael Lynn
 </p>

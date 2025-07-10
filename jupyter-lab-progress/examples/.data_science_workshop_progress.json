@@ -1,0 +1,42 @@
+{
+  "lab_name": "Data Science Workshop",
+  "steps": {
+    "Setup": {
+      "completed": true,
+      "timestamp": "2025-07-10T10:37:02.133394",
+      "attempts": 0,
+      "score": 100,
+      "notes": "Environment ready!"
+    },
+    "Load Data": {
+      "completed": true,
+      "timestamp": "2025-07-10T10:37:02.136711",
+      "attempts": 0,
+      "score": 95,
+      "notes": "Data loaded successfully"
+    },
+    "Clean Data": {
+      "completed": false,
+      "timestamp": null,
+      "attempts": 0,
+      "score": null,
+      "notes": "Handling missing values...",
+      "progress": 0.7
+    },
+    "Analyze": {
+      "completed": false,
+      "timestamp": null,
+      "attempts": 0,
+      "score": null,
+      "notes": ""
+    },
+    "Visualize": {
+      "completed": false,
+      "timestamp": null,
+      "attempts": 0,
+      "score": null,
+      "notes": ""
+    }
+  },
+  "start_time": "2025-07-10T10:37:00.907747"
+}

@@ -1,0 +1,397 @@
+# Extracted Notebook Cell Contents
+# From: 04_complete_mongodb_lab.ipynb
+
+## Cell 1 (markdown)
+
+# Complete MongoDB Vector Search Lab
+
+This notebook demonstrates a complete lab experience using all features of jupyter-lab-progress in a real-world MongoDB Vector Search workshop.
+
+## What You'll Learn
+- Set up MongoDB Atlas for vector search
+- Create and validate vector embeddings  
+- Build semantic search applications
+- Use jupyter-lab-progress for engaging lab experience
+
+## Prerequisites
+- MongoDB Atlas account (free tier works)
+- Python 3.8+
+- Basic knowledge of Python and pandas
+
+================================================================================
+
+## Cell 2 (markdown)
+
+## Lab Setup and Introduction
+
+================================================================================
+
+## Cell 3 (code)
+
+# Import all necessary libraries
+from jupyter_lab_progress import LabProgress, LabValidator, show_info, show_warning
+import pandas as pd
+import numpy as np
+import json
+from datetime import datetime
+import time
+
+# Initialize our lab tools
+validator = LabValidator()
+
+# Welcome message
+show_info(\\,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+================================================================================
+
+## Cell 4 (markdown)
+
+## Lab Overview and Progress Tracking
+
+================================================================================
+
+## Cell 5 (code)
+
+# Create our main lab progress tracker
+main_progress = LabProgress(
+    steps=[
+        \,
+        \, 
+        \,
+        \,
+        \,
+        \,
+        \,
+        \
+
+================================================================================
+
+## Cell 6 (markdown)
+
+## Phase 1: Environment Setup
+
+================================================================================
+
+## Cell 7 (code)
+
+# Check Python version and required packages
+import sys
+print(f\)
+
+# Simulate package installation check
+
+================================================================================
+
+## Cell 8 (markdown)
+
+## Phase 2: Data Preparation
+
+================================================================================
+
+## Cell 9 (code)
+
+# Create a realistic e-commerce product dataset
+show_info(\)
+
+products_data = {
+    'product_id': ['TECH001', 'TECH002', 'TECH003', 'TECH004', 'TECH005',
+
+================================================================================
+
+## Cell 10 (markdown)
+
+## Phase 3: Embedding Generation
+
+================================================================================
+
+## Cell 11 (code)
+
+# Create a sub-progress tracker for embedding generation
+embedding_progress = LabProgress(
+    steps=[
+        \,
+        \,
+        \,
+        \
+
+================================================================================
+
+## Cell 12 (code)
+
+# Simulate embedding model initialization
+show_info(\)
+time.sleep(1)  # Simulate model loading time
+
+def create_semantic_embedding(text, model_type=\, dimensions=384):
+    \\,
+    ,
+    ,
+    \
+    # Create reproducible \ based on text content
+    import hashlib
+
+================================================================================
+
+## Cell 13 (code)
+
+# Process product descriptions for embedding
+show_info(\)
+
+# Combine name and description for richer embeddings
+
+================================================================================
+
+## Cell 14 (code)
+
+# Generate embeddings with progress tracking
+show_info(\)
+
+================================================================================
+
+## Cell 15 (code)
+
+# Verify embedding quality
+show_info(\)
+
+# Check embedding statistics
+embedding_array = np.array(embeddings)
+norms = np.linalg.norm(embedding_array, axis=1)
+mean_norm = np.mean(norms)
+std_norm = np.std(norms)
+
+print(f\)
+print(f\)
+print(f\)
+print(f\)
+print(f\)
+
+# Test similarity between similar products
+
+================================================================================
+
+## Cell 16 (markdown)
+
+## Phase 4: Data Validation
+
+================================================================================
+
+## Cell 17 (code)
+
+# Comprehensive data validation
+show_info(\)
+
+================================================================================
+
+## Cell 18 (markdown)
+
+## Phase 5: MongoDB Integration
+
+================================================================================
+
+## Cell 19 (code)
+
+# MongoDB integration (simulated)
+show_warning(\\,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+# Simulate MongoDB document preparation
+show_info(\)
+
+# Convert DataFrame to MongoDB documents
+
+================================================================================
+
+## Cell 20 (code)
+
+# Simulate MongoDB operations
+def simulate_mongodb_operations():
+    \\\
+    operations = [
+        \,
+        \,
+        \,
+        \,
+        \
+
+================================================================================
+
+## Cell 21 (markdown)
+
+## Phase 6: Vector Search Implementation
+
+================================================================================
+
+## Cell 22 (code)
+
+# Implement vector search functionality
+show_info(\)
+
+def vector_search(query_text, products_df, top_k=5):
+    \\,
+    ,
+    ,
+    \
+    # Generate embedding for the query
+    query_embedding = create_semantic_embedding(query_text)
+    
+    # Calculate similarities with all products
+
+================================================================================
+
+## Cell 23 (code)
+
+# Advanced search features
+show_info(\)
+
+def hybrid_search(query_text, products_df, category_filter=None, price_range=None, top_k=5):
+    \\,
+    ,
+    \
+    # Start with all products
+    filtered_df = products_df.copy()
+    
+    # Apply category filter
+    if category_filter:
+
+================================================================================
+
+## Cell 24 (markdown)
+
+## Phase 7: Testing and Optimization
+
+================================================================================
+
+## Cell 25 (code)
+
+# Comprehensive testing
+show_info(\)
+
+# Test 1: Search precision
+def test_search_precision():
+    \\\
+    test_cases = [
+        (\, \, \),
+        (\, \, None),
+        (\, \, \),
+        (\, \, None)
+
+================================================================================
+
+## Cell 26 (code)
+
+# Performance testing
+show_info(\)
+
+import time
+
+# Test search speed
+queries = [\, \, \, \, \
+
+================================================================================
+
+## Cell 27 (markdown)
+
+## Phase 8: Lab Completion and Summary
+
+================================================================================
+
+## Cell 28 (code)
+
+# Generate comprehensive lab report
+show_info(\)
+
+# Create summary statistics
+lab_stats = {
+    'products_processed': len(products_df),
+
+================================================================================
+
+## Cell 29 (code)
+
+# Next steps and resources
+show_info(\\,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+show_info(\\,
+    ,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+show_warning(\\,
+    ,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+# Final message
+show_info(\\,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    \)
+
+================================================================================
+
+## Cell 30 (markdown)
+
+## Bonus: Interactive Search Demo
+
+Try the search system yourself!
+
+================================================================================
+
+## Cell 31 (code)
+
+# Interactive search function
+def interactive_search_demo():
+    \\\
+    show_info(\)
+    
+    # Predefined example queries students can try
+    example_queries = [
+        \,
+        \,
+        \,
+        \,
+        \
+
+================================================================================
+

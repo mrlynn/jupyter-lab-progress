@@ -1,0 +1,19 @@
+name: jupyter-lab-progress-examples
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.8
+  - pip
+  - jupyter
+  - jupyterlab
+  - notebook
+  - pandas>=1.0.0
+  - numpy>=1.18.0
+  - matplotlib>=3.0.0
+  - seaborn>=0.11.0
+  - plotly>=5.0.0
+  - pymongo>=4.0.0
+  - dnspython>=2.0.0
+  - pip:
+    - jupyter-lab-progress

@@ -1,48 +1,69 @@
 from IPython.display import display, HTML, Markdown
 from typing import Optional, Dict, Any
 import json
+import re
+
+def _format_message(message: str) -> str:
+    """Format a message for HTML display, handling line breaks and basic formatting."""
+    # Convert newlines to HTML line breaks
+    formatted = message.replace('\n', '<br>')
+    
+    # Convert numbered lists (1. item, 2. item, etc.)
+    formatted = re.sub(r'^(\d+\.\s)', r'<br>&nbsp;&nbsp;\1', formatted, flags=re.MULTILINE)
+    
+    # Convert bullet points (- item or * item)
+    formatted = re.sub(r'^([-*]\s)', r'<br>&nbsp;&nbsp;•&nbsp;', formatted, flags=re.MULTILINE)
+    
+    # Clean up any leading <br> tags
+    formatted = re.sub(r'^<br>', '', formatted)
+    
+    return formatted
 
 def show_info(message: str, title: Optional[str] = None):
     """Display an information message with blue styling."""
     title_html = f"<strong>{title}</strong><br>" if title else ""
+    formatted_message = _format_message(message)
     display(HTML(f"""
     <div style='background-color: #e7f3ff; border-left: 6px solid #2196F3; 
                 padding: 10px; margin: 10px 0; border-radius: 5px;'>
         <span style='font-size: 16px; margin-right: 8px;'>ℹ️</span>
-        {title_html}{message}
+        {title_html}{formatted_message}
     </div>
     """))
 
 def show_warning(message: str, title: Optional[str] = None):
     """Display a warning message with yellow styling."""
     title_html = f"<strong>{title}</strong><br>" if title else ""
+    formatted_message = _format_message(message)
     display(HTML(f"""
     <div style='background-color: #fff3cd; border-left: 6px solid #ffecb5; 
                 padding: 10px; margin: 10px 0; border-radius: 5px;'>
         <span style='font-size: 16px; margin-right: 8px;'>⚠️</span>
-        {title_html}{message}
+        {title_html}{formatted_message}
     </div>
     """))
 
 def show_error(message: str, title: Optional[str] = None):
     """Display an error message with red styling."""
     title_html = f"<strong>{title}</strong><br>" if title else ""
+    formatted_message = _format_message(message)
     display(HTML(f"""
     <div style='background-color: #ffebee; border-left: 6px solid #f44336; 
                 padding: 10px; margin: 10px 0; border-radius: 5px;'>
         <span style='font-size: 16px; margin-right: 8px;'>❌</span>
-        {title_html}{message}
+        {title_html}{formatted_message}
     </div>
     """))
 
 def show_success(message: str, title: Optional[str] = None):
     """Display a success message with green styling."""
     title_html = f"<strong>{title}</strong><br>" if title else ""
+    formatted_message = _format_message(message)
     display(HTML(f"""
     <div style='background-color: #e8f5e9; border-left: 6px solid #4CAF50; 
                 padding: 10px; margin: 10px 0; border-radius: 5px;'>
         <span style='font-size: 16px; margin-right: 8px;'>✅</span>
-        {title_html}{message}
+        {title_html}{formatted_message}
     </div>
     """))
 

@@ -215,7 +215,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Issues**: [GitHub Issues](https://github.com/mrlynn/jupyter-lab-utils/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/mrlynn/jupyter-lab-utils/discussions)
 
-## 🏗️ Built by MongoDB Developer Relations
+## 🏗️ Built by Michael Lynn [https://mlynn.org](https://mlynn.org)
 
 Created with ❤️ by the MongoDB Developer Relations team to enhance the learning experience in data science and development workshops.
 
