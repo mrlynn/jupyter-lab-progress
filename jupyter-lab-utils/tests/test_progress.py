@@ -3,7 +3,7 @@
 import pytest
 import tempfile
 import os
-from jupyter_lab_utils import LabProgress
+from jupyter_lab_progress import LabProgress
 
 
 class TestLabProgress:

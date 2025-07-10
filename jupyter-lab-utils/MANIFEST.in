@@ -5,8 +5,8 @@ include CHANGELOG.md
 include CONTRIBUTING.md
 
 # Include package data
-recursive-include jupyter_lab_utils *.py
-include jupyter_lab_utils/py.typed
+recursive-include jupyter_lab_progress *.py
+include jupyter_lab_progress/py.typed
 
 # Include tests (but exclude from wheel)
 recursive-include tests *.py

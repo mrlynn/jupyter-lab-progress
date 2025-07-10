@@ -15,18 +15,18 @@ def test_imports():
         print("Testing direct imports...")
         
         # Test version import
-        from jupyter_lab_utils._version import __version__, __title__, __author__
+        from jupyter_lab_progress._version import __version__, __title__, __author__
         print(f"✅ Version: {__version__}")
         print(f"✅ Title: {__title__}")
         print(f"✅ Author: {__author__}")
         
         # Test main classes
-        from jupyter_lab_utils.progress import LabProgress
-        from jupyter_lab_utils.validator import LabValidator
+        from jupyter_lab_progress.progress import LabProgress
+        from jupyter_lab_progress.validator import LabValidator
         print("✅ Successfully imported LabProgress and LabValidator")
         
         # Test display functions  
-        from jupyter_lab_utils.display import show_info, show_success
+        from jupyter_lab_progress.display import show_info, show_success
         print("✅ Successfully imported display functions")
         
         return True
@@ -40,8 +40,8 @@ def test_basic_functionality():
     try:
         print("\nTesting basic functionality...")
         
-        from jupyter_lab_utils.progress import LabProgress
-        from jupyter_lab_utils.validator import LabValidator
+        from jupyter_lab_progress.progress import LabProgress
+        from jupyter_lab_progress.validator import LabValidator
         
         # Test progress creation (without display since no Jupyter)
         progress = LabProgress(["Step 1", "Step 2"], lab_name="Test Lab")

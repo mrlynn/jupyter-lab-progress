@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jupyter-lab-progress"
-version = "1.0.1"
+version = "1.1.0"
 authors = [
     {name = "Michael Lynn", email = "michael.lynn@mongodb.com"},
 ]
@@ -74,11 +74,11 @@ package-dir = {"" = "."}
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["jupyter_lab_utils*"]
+include = ["jupyter_lab_progress*"]
 exclude = ["tests*"]
 
 [tool.setuptools.package-data]
-jupyter_lab_utils = ["py.typed"]
+jupyter_lab_progress = ["py.typed"]
 
 [tool.black]
 line-length = 88
@@ -122,7 +122,7 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 
 [tool.coverage.run]
-source = ["jupyter_lab_utils"]
+source = ["jupyter_lab_progress"]
 omit = ["*/tests/*"]
 
 [tool.coverage.report]
