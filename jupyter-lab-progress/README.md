@@ -1,6 +1,6 @@
-# Jupyter Lab Utils
+# Jupyter Lab Progress
 
-[![PyPI version](https://badge.fury.io/py/jupyter-lab-utils.svg)](https://badge.fury.io/py/jupyter-lab-utils)
+[![PyPI version](https://badge.fury.io/py/jupyter-lab-progress.svg)](https://badge.fury.io/py/jupyter-lab-progress)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -18,21 +18,21 @@ A comprehensive Python library for creating interactive lab exercises in Jupyter
 ## 📦 Installation
 
 ```bash
-pip install jupyter-lab-utils
+pip install jupyter-lab-progress
 ```
 
 For development installation:
 
 ```bash
-git clone https://github.com/mongodb/jupyter-lab-utils.git
-cd jupyter-lab-utils
+git clone https://github.com/mrlynn/jupyter-lab-progress.git
+cd jupyter-lab-progress/jupyter-lab-progress
 pip install -e ".[dev]"
 ```
 
 ## 🏃‍♂️ Quick Start
 
 ```python
-from jupyter_lab_utils import LabProgress, LabValidator, show_info, show_success
+from jupyter_lab_progress import LabProgress, LabValidator, show_info, show_success
 
 # Create a progress tracker
 progress = LabProgress(["Load Data", "Process Data", "Analyze Results"], 
@@ -59,7 +59,7 @@ show_success("Great job! Data loaded successfully")
 Track student progress through lab exercises with visual feedback:
 
 ```python
-from jupyter_lab_utils import LabProgress
+from jupyter_lab_progress import LabProgress
 
 # Basic usage
 progress = LabProgress(["Step 1", "Step 2", "Step 3"])
@@ -84,7 +84,7 @@ progress.mark_partial("Clean Data", 0.75)  # 75% complete
 Comprehensive validation methods for checking student work:
 
 ```python
-from jupyter_lab_utils import LabValidator
+from jupyter_lab_progress import LabValidator
 
 validator = LabValidator()
 
@@ -110,7 +110,7 @@ validator.validate_and_mark_complete("Step 1", condition=True)
 Rich display functions for better communication:
 
 ```python
-from jupyter_lab_utils import *
+from jupyter_lab_progress import *
 
 # Messages
 show_info("This is informational")
@@ -126,7 +126,7 @@ show_hint("Try using pandas read_csv function")
 show_progress_bar(3, 10, label="Overall Progress")
 show_checklist({"Task 1": True, "Task 2": False})
 
-# Data display
+# Data display 
 show_json({"key": "value"}, title="Results")
 show_table(headers=["Name", "Score"], rows=[["Alice", "95"]])
 ```
@@ -157,7 +157,7 @@ progress = LabProgress(steps, persist=True, persist_file="my_lab.json")
 ### Integration Example
 
 ```python
-from jupyter_lab_utils import *
+from jupyter_lab_progress import *
 
 # Complete lab setup
 steps = ["Import Libraries", "Load Data", "Preprocess", "Train Model"]
@@ -192,8 +192,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Development Setup
 
 ```bash
-git clone https://github.com/mongodb/jupyter-lab-utils.git
-cd jupyter-lab-utils
+git clone https://github.com/mrlynn/jupyter-lab-utils.git
+cd jupyter-lab-utils/jupyter-lab-progress
 pip install -e ".[dev]"
 pre-commit install
 ```
@@ -202,7 +202,7 @@ pre-commit install
 
 ```bash
 pytest
-pytest --cov=jupyter_lab_utils --cov-report=html
+pytest --cov=jupyter_lab_progress --cov-report=html
 ```
 
 ## 📄 License
@@ -211,9 +211,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Documentation**: [https://jupyter-lab-utils.readthedocs.io/](https://jupyter-lab-utils.readthedocs.io/)
-- **Issues**: [GitHub Issues](https://github.com/mongodb/jupyter-lab-utils/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/mongodb/jupyter-lab-utils/discussions)
+- **Documentation**: [https://github.com/mrlynn/jupyter-lab-utils#readme](https://github.com/mrlynn/jupyter-lab-utils#readme)
+- **Issues**: [GitHub Issues](https://github.com/mrlynn/jupyter-lab-utils/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/mrlynn/jupyter-lab-utils/discussions)
 
 ## 🏗️ Built by MongoDB Developer Relations
 
