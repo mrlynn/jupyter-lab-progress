@@ -29,7 +29,7 @@ jobs:
       - name: Build release distributions
         run: |
           # Build the jupyter-lab-utils package
-          cd jupyter-lab-utils
+          cd jupyter-lab-progress
           python -m pip install --upgrade pip
           python -m pip install build
           python -m build
@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-dists
-          path: jupyter-lab-utils/dist/
+          path: jupyter-lab-progress/dist/
 
   pypi-publish:
     runs-on: ubuntu-latest
