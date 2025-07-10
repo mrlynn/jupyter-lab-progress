@@ -20,7 +20,7 @@ Teaching complex technical concepts in Jupyter notebooks can be challenging. Stu
 ## 🎯 See It In Action
 
 ```python
-from jupyter_lab_utils import LabProgress, show_info, show_warning
+from jupyter_lab_progress import LabProgress, show_info, show_warning
 
 # Create a progress tracker for your lab
 progress = LabProgress(total_steps=5)
@@ -42,6 +42,8 @@ show_warning("Remember to check your index status before querying!")
 pip install jupyter-lab-progress
 ```
 
+> **Note**: The package name is `jupyter-lab-progress` on PyPI, but you import it as `jupyter_lab_progress` (with underscores) in your Python code.
+
 ## 🛠️ Core Features
 
 ### Progress Tracking
@@ -49,7 +51,7 @@ pip install jupyter-lab-progress
 Create engaging progress bars that update in real-time as students work through your labs:
 
 ```python
-from jupyter_lab_utils import LabProgress
+from jupyter_lab_progress import LabProgress
 
 # Initialize tracker
 progress = LabProgress(
@@ -67,7 +69,7 @@ progress.display()  # Shows beautiful HTML progress bar
 Validate student work instantly with helpful feedback:
 
 ```python
-from jupyter_lab_utils import LabValidator
+from jupyter_lab_progress import LabValidator
 
 validator = LabValidator()
 
@@ -88,7 +90,7 @@ validator.assert_in_dataframe(
 Replace boring print statements with eye-catching styled messages:
 
 ```python
-from jupyter_lab_utils import show_info, show_warning
+from jupyter_lab_progress import show_info, show_warning
 
 # Beautiful blue info boxes
 show_info("🎉 Great job! Your vector index is ready to use.")
@@ -117,7 +119,7 @@ Originally created for MongoDB's Developer Days and workshops, this library has 
 ## 📚 Full Example
 
 ```python
-from jupyter_lab_utils import LabProgress, LabValidator, show_info, show_warning
+from jupyter_lab_progress import LabProgress, LabValidator, show_info, show_warning
 
 # Set up the lab
 progress = LabProgress(
@@ -146,6 +148,13 @@ progress.mark_completed("Data Import")
 # Continue through the lab...
 ```
 
+## 🚀 Quick Links
+
+- **PyPI Package**: [jupyter-lab-progress](https://pypi.org/project/jupyter-lab-progress/)
+- **GitHub Repository**: [mrlynn/jupyter-lab-utils](https://github.com/mrlynn/jupyter-lab-utils)
+- **Documentation**: [Contributing Guide](jupyter-lab-utils/CONTRIBUTING.md)
+- **Issues & Feature Requests**: [GitHub Issues](https://github.com/mrlynn/jupyter-lab-utils/issues)
+
 ## 🤝 Contributing
 
 We love contributions! Whether it's:
@@ -154,7 +163,7 @@ We love contributions! Whether it's:
 - 📚 Documentation improvements
 - 💡 Feature suggestions
 
-Please check out our [Contributing Guide](CONTRIBUTING.md) to get started.
+Please check out our [Contributing Guide](jupyter-lab-utils/CONTRIBUTING.md) to get started.
 
 ## 📄 License
 
