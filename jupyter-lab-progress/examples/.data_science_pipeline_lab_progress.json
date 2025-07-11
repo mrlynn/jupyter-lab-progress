@@ -1,0 +1,194 @@
+{
+  "lab_name": "Data Science Pipeline Lab",
+  "steps": {
+    "Environment Setup": {
+      "completed": true,
+      "timestamp": "2025-07-11T10:34:43.075807",
+      "attempts": 0,
+      "score": 100,
+      "notes": "",
+      "partial_progress": 0.0,
+      "checkpoints": []
+    },
+    "Data Import": {
+      "completed": true,
+      "timestamp": "2025-07-11T10:34:53.334513",
+      "attempts": 0,
+      "score": 95,
+      "notes": "Loaded main dataset",
+      "partial_progress": 0.7,
+      "checkpoints": [
+        {
+          "name": "csv_started",
+          "progress": 0.3,
+          "timestamp": "2025-07-11T10:34:51.321652"
+        },
+        {
+          "name": "main_loaded",
+          "progress": 0.7,
+          "timestamp": "2025-07-11T10:34:52.329010"
+        }
+      ]
+    },
+    "Data Cleaning": {
+      "completed": true,
+      "timestamp": "2025-07-11T10:35:00.204719",
+      "attempts": 3,
+      "score": 85,
+      "notes": "Fixed missing values",
+      "partial_progress": 0.4,
+      "checkpoints": []
+    },
+    "Feature Engineering": {
+      "completed": true,
+      "timestamp": "2025-07-11T10:35:05.903006",
+      "attempts": 0,
+      "score": 92,
+      "notes": "Created basic features",
+      "partial_progress": 0.5,
+      "checkpoints": []
+    },
+    "Model Building": {
+      "completed": false,
+      "timestamp": null,
+      "attempts": 0,
+      "score": null,
+      "notes": "",
+      "partial_progress": 0.0,
+      "checkpoints": []
+    },
+    "Model Evaluation": {
+      "completed": false,
+      "timestamp": null,
+      "attempts": 0,
+      "score": null,
+      "notes": "",
+      "partial_progress": 0.0,
+      "checkpoints": []
+    }
+  },
+  "start_time": "2025-07-11T10:34:34.851785",
+  "session_id": "2025-07-11T10:34:34.850966",
+  "student_id": "5530bd28",
+  "last_saved": "2025-07-11T10:35:05.903073",
+  "step_metadata": {},
+  "analytics_data": [
+    {
+      "timestamp": "2025-07-11T10:34:43.075847",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "step_completed",
+      "step_name": "Environment Setup",
+      "score": 100,
+      "time_spent": null,
+      "notes": ""
+    },
+    {
+      "timestamp": "2025-07-11T10:34:51.321670",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "partial_progress",
+      "step_name": "Data Import",
+      "progress": 0.3,
+      "checkpoint_name": "csv_started",
+      "notes": "Started loading CSV files"
+    },
+    {
+      "timestamp": "2025-07-11T10:34:52.329042",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "partial_progress",
+      "step_name": "Data Import",
+      "progress": 0.7,
+      "checkpoint_name": "main_loaded",
+      "notes": "Loaded main dataset"
+    },
+    {
+      "timestamp": "2025-07-11T10:34:53.334549",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "step_completed",
+      "step_name": "Data Import",
+      "score": 95,
+      "time_spent": 2.012866,
+      "notes": ""
+    },
+    {
+      "timestamp": "2025-07-11T10:34:58.186330",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "attempt",
+      "step_name": "Data Cleaning"
+    },
+    {
+      "timestamp": "2025-07-11T10:34:58.688499",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "attempt",
+      "step_name": "Data Cleaning"
+    },
+    {
+      "timestamp": "2025-07-11T10:34:59.194667",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "partial_progress",
+      "step_name": "Data Cleaning",
+      "progress": 0.4,
+      "checkpoint_name": null,
+      "notes": "Fixed missing values"
+    },
+    {
+      "timestamp": "2025-07-11T10:35:00.201374",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "attempt",
+      "step_name": "Data Cleaning"
+    },
+    {
+      "timestamp": "2025-07-11T10:35:00.204754",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "step_completed",
+      "step_name": "Data Cleaning",
+      "score": 85,
+      "time_spent": 1.010062,
+      "notes": ""
+    },
+    {
+      "timestamp": "2025-07-11T10:35:04.894619",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "partial_progress",
+      "step_name": "Feature Engineering",
+      "progress": 0.5,
+      "checkpoint_name": null,
+      "notes": "Created basic features"
+    },
+    {
+      "timestamp": "2025-07-11T10:35:05.903057",
+      "session_id": "2025-07-11T10:34:34.850966",
+      "student_id": "5530bd28",
+      "lab_name": "Data Science Pipeline Lab",
+      "event_type": "step_completed",
+      "step_name": "Feature Engineering",
+      "score": 92,
+      "time_spent": 1.008398,
+      "notes": ""
+    }
+  ],
+  "step_start_times": {
+    "Data Import": "2025-07-11T10:34:51.321647",
+    "Data Cleaning": "2025-07-11T10:34:59.194657",
+    "Feature Engineering": "2025-07-11T10:35:04.894608"
+  }
+}

@@ -90,3 +90,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.claude
+
+codebase.md
+.aidigestignore

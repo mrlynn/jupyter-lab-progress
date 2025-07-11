@@ -30,7 +30,9 @@ from .display import (
     show_table,
     show_checklist,
     show_tabs,
-    clear
+    clear,
+    show_contextual_tips,
+    show_step_guidance
 )
 
 __all__ = [
@@ -62,5 +64,7 @@ __all__ = [
     "show_table",
     "show_checklist",
     "show_tabs",
-    "clear"
+    "clear",
+    "show_contextual_tips",
+    "show_step_guidance"
 ]
